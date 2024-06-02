@@ -4,14 +4,12 @@
   
 }
 .textcontainer{
-  width: 40%;
+  flex:1;
   display: flex;
   flex-direction: column;
   gap:50px;
 }
 .imageContainer{
-  max-width: 300px;
- 
   flex:1;
   position: relative;
 }
@@ -41,4 +39,18 @@
   filter: grayscale(1);
   height: 50px;
   position: relative;
+}
+
+@media (max-width:500px){
+  .container{
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+  .buttons{
+    justify-content: center;
+  }
+  .brands{
+    margin-left: 34px;
+  }
 }

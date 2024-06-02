@@ -22,9 +22,10 @@ a{
 button{
   padding:8px;
 }
+
 .container{
   background-color:var(--bg2);
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100vw;
   margin:auto;
   padding-left: 30px;
