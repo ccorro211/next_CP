@@ -1,6 +1,8 @@
+import { getPosts } from "../../_actions/postAction";
 import styles from "./page.module.css"
 import Image from "next/image";
-export default function Home() {
+export default  async function Home() {
+  const {data , errMsg} = await getPosts();
   return (
     <div className={styles.container}>
         <div className={styles.textcontainer}>

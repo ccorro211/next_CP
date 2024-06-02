@@ -1,6 +1,9 @@
+
 import styles from "./single.module.css"
 import Image from "next/image"
-const SinglePage=()=>{
+
+const SinglePage= ()=>{
+    
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}>

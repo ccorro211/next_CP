@@ -1,11 +1,21 @@
+'use client'
+import { usePathname, useSearchParams } from "next/navigation"
 import styles from "./contact.module.css"
 import Image from "next/image"
 const ContactPage = ()=>{
+    const a = Math.random()
+    console.log(a)
+    let pathname = usePathname()
+    let search = useSearchParams()
+    const q= search.get("q")
+    console.log(pathname)
+    console.log(q)
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}>
                 <Image src="/contact.png" alt="" fill/>
             </div>
+            
             <div className={styles.formContainer}>
                 <form action="" className={styles.form}>
                     <input type="text" placeholder="Name and Surname" />
