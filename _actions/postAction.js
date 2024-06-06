@@ -1,6 +1,6 @@
 'use server'
 
-import  PostModel from "../lib/dbmodel";
+import  {PostModel} from "../lib/dbmodel";
 import connectDB from "../lib/database"
 
 export async function getPosts(){
@@ -12,5 +12,13 @@ export async function getPosts(){
     }catch(error){
         return { errMsg : error.message }
     }
+}
+
+export async function ServerAction(){
+    await connectDB()
+    console.log("hello serveraction")
+    const newPost = new PostModel({
+        
+    })
 }
 

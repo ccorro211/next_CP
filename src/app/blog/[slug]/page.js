@@ -1,8 +1,13 @@
 
+import axios from "axios"
 import styles from "./single.module.css"
 import Image from "next/image"
 
+const getData = async (slug)=>{
+    const res = await axios.get(`http://localhost:3000/api/${slug}`)
+}
 const SinglePage= ()=>{
+    
     
     return (
         <div className={styles.container}>

@@ -12,9 +12,3 @@
     color: var(--bg);
     padding:8px;
 }
-.logout{
-    padding:9px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
