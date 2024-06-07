@@ -1,0 +1,23 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 50px;
+    border-radius: 10px;
+    text-align:center;
+    gap:30px;
+}
+.github{
+    width: 100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor: pointer;
+    background-color: cadetblue;
+}

@@ -4,6 +4,7 @@ import Image from "next/image";
 export default  async function Home() {
   const {msg , errMsg} = await getPosts();
   console.log(msg);
+  
   return (
     <div className={styles.container}>
         <div className={styles.textcontainer}>
